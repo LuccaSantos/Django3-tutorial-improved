@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;
+}
+
+/*NAVBAR*/
+
+nav {
+    border-bottom: 5px solid #df6c4e;
+}
+
+nav .btn {
+    background-color: #df6c4e;
+    color: inherit;
+}
