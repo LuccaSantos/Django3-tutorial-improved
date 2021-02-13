@@ -5,6 +5,23 @@ body {
     font-family: 'Roboto', serif;
 }
 
+.content {
+    margin: 0 10%;
+}
+
+.content ul li {
+    background-color: #df6c4e;
+}
+
+.content ul li a {
+    color: wheat;
+    text-decoration: none;
+}
+
+.introduction h4 {
+    margin: 2%;
+}
+
 /*NAVBAR*/
 
 nav {
@@ -14,4 +31,22 @@ nav {
 nav .btn {
     background-color: #df6c4e;
     color: inherit;
+}
+
+/* VOTE */
+.vote {
+    margin: 10% auto;
+    border-radius: 25px;
+    border: 2px solid #df6c4e;
+    width: 60%;
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #df6c4e;
+    color: wheat;
 }
