@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', serif;
+    color: wheat;
 }
 
 .content {
@@ -13,8 +14,8 @@ body {
     background-color: #df6c4e;
 }
 
-.content ul li a {
-    color: wheat;
+a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -28,17 +29,15 @@ nav {
     border-bottom: 5px solid #df6c4e;
 }
 
-nav .btn {
-    background-color: #df6c4e;
-    color: inherit;
-}
 
-/* VOTE */
-.vote {
+/* CARD */
+.card {
+    background-color: #df6c4e;
+    color: wheat;
     margin: 10% auto;
     border-radius: 25px;
     border: 2px solid #df6c4e;
-    width: 60%;
+    width: 40%;
 }
 
 /* FOOTER */
@@ -47,6 +46,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #df6c4e;
+    background-color: #207cfa;
+    border-top: 5px solid #df6c4e;
     color: wheat;
 }

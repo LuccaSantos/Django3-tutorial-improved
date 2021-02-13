@@ -3,14 +3,17 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-<h1>{{ question.question_text }}</h1>
-
-<ul>
-    {% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-    {% endfor %}
-</ul>
-
-<a href="{% url 'polls:detail' question.id %}">Vote again?</a>
-
+<div class="card">
+    <div class="card-body">
+        <h1 class="card-title">{{ question.question_text }}</h1>
+        <ul>
+            {% for choice in question.choice_set.all %}
+            <li>{{ choice.choice_text }} - {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'polls:detail' question.id %}">
+            <button class="btn btn-light">Vote again?</button>
+        </a>
+    </div>
+</div>
 {% endblock %}

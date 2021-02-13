@@ -3,12 +3,10 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-<div class="vote card text-center">
+<div class="vote card">
     <div class="card-body">
         <h1 class="card-title">{{ question.question_text }}</h1>
-
         {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-
         <form class="form-check" action="{% url 'polls:vote' question.id %}" method="post">
             {% csrf_token %}
             {% for choice in question.choice_set.all %}
@@ -16,7 +14,7 @@
                 value="{{ choice.id }}">
             <label class="form-check-label" for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
             {% endfor %}
-            <input class="btn btn-outline-primary" type="submit" value="Vote">
+            <input class="btn btn-light" type="submit" value="Vote">
         </form>
 
     </div>
